@@ -539,10 +539,10 @@
   
     
 
-  <section class="ftco-section bg-light" style="margin-top: 0; padding-top: 0;">
+  <!-- <section class="ftco-section bg-light" style="margin-top: 0; padding-top: 0;">
     <div class="container-fluid">
         <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section ftco-animate text-center">
+            <div class="col-md-12 heading-section ftco-animate text-center">
                 <h2 class="mb-4" style="padding-top: 50px;">Our Latest Events</h2>
             </div>
         </div>
@@ -618,7 +618,88 @@
             </div>
         </div>
     </div>
+</section> -->
+<section class="ftco-section bg-light" style="margin-top: 0; padding-top: 0;">
+  <div class="container-fluid">
+      <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-12 heading-section ftco-animate text-center">
+              <h2 class="mb-4" style="padding-top: 50px;">Our Latest Events</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 ftco-animate">
+              <div class="carousel-latest-events owl-carousel">
+                  <div class="item">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="blog-single.html" class="block-20" style="background-image: url('images/Hearts_United.jpg');" alt="Hearts United Event"></a>
+                          <div class="text p-4 d-block">
+                              <div class="meta mb-3">
+                                  <div><a href="#">Oct. 20, 2024</a></div>
+                              </div>
+                              <h3 class="heading mb-4"><a href="#">Hearts United: One Day for Change</a></h3>
+                              <p>Join us for a day of charity, where volunteers will gather to participate in various community service projects aimed at improving the lives of the less fortunate. From food drives to neighborhood clean-ups, your contributions will make a difference.</p>
+                              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="blog-single.html" class="block-20" style="background-image: url('images/Care&Share.jpg');" alt="Care & Share Event"></a>
+                          <div class="text p-4 d-block">
+                              <div class="meta mb-3">
+                                  <div><a href="#">Oct. 30, 2024</a></div>
+                              </div>
+                              <h3 class="heading mb-4"><a href="#">Care & Share: A Charity Day of Giving</a></h3>
+                              <p>This event is dedicated to collecting donations and providing assistance to families in need. Throughout the day, we will engage in a variety of activities aimed at improving lives in our community. Participants can expect food distribution to help alleviate hunger.</p>
+                              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="blog-single.html" class="block-20" style="background-image: url('images/Christmas.jpg');" alt="Christmas Wonderland Festival"></a>
+                          <div class="text p-4 d-block">
+                              <div class="meta mb-3">
+                                  <div><a href="#">Dec. 24, 2024</a></div>
+                              </div>
+                              <h3 class="heading mb-4"><a href="#">Christmas Wonderland Festival</a></h3>
+                              <p>Experience a magical day filled with festive cheer! Enjoy holiday-themed activities such as cookie decorating, ornament making, and a visit from Santa. The day will culminate in a tree-lighting ceremony and caroling, creating a warm holiday atmosphere for all.</p>
+                              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="blog-single.html" class="block-20" style="background-image: url('images/Newyear.jpg');" alt="New Year Celebration"></a>
+                          <div class="text p-4 d-block">
+                              <div class="meta mb-3">
+                                  <div><a href="#">Jan. 1, 2025</a></div>
+                              </div>
+                              <h3 class="heading mb-4"><a href="#">New Year Celebration</a></h3>
+                              <p>Get ready to welcome the New Year in style at our grand New Year Celebration! This festive event promises an evening filled with joy as we bid farewell to the past year and embrace new beginnings. Enjoy a delightful feast and exciting entertainment throughout the night.</p>
+                              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="blog-entry align-self-stretch">
+                          <a href="blog-single.html" class="block-20" style="background-image: url('images/Charity_Gala_Night.jpg');" alt="Charity Gala Night"></a>
+                          <div class="text p-4 d-block">
+                              <div class="meta mb-3">
+                                  <div><a href="#">Feb. 14, 2025</a></div>
+                              </div>
+                              <h3 class="heading mb-4"><a href="#">Charity Gala Night</a></h3>
+                              <p>Join us for an enchanting evening at our Charity Gala Night, where elegance meets compassion! This exquisite event aims to raise funds and awareness for those in need within our community. Guests will enjoy a sophisticated dining experience.</p>
+                              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
+
 
     <footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>
@@ -764,6 +845,26 @@ $(document).ready(function(){
     });
 });
 
-</script>  
+</script> 
+<script>
+  $('.carousel-latest-events').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
+
+</script> 
   </body>
 </html>
